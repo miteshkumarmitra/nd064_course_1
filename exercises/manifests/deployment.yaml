@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   labels:
     app: nginx
+    app.kubernetes.io/instance: nginx-alpine
     tag: alpine
   name: nginx-alpine
   namespace: demo
