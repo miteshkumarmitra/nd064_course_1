@@ -11,8 +11,7 @@ spec:
   replicas: 3
   selector:
     matchLabels:
-      app: nginx
-      tag: alpine
+      app: nginx-alpine
   strategy:
     rollingUpdate:
       maxSurge: 25%
