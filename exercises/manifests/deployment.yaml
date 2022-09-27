@@ -20,8 +20,7 @@ spec:
   template:
     metadata:
       labels:
-        app: nginx
-        tag: alpine
+        app: nginx-alpine
     spec:
       containers:
       - image: nginx:alpine
