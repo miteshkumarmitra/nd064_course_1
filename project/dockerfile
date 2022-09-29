@@ -6,13 +6,11 @@ LABEL maintainer="Mitesh"
 # copy files from the host to the container filesystem. 
 # For example, all the files in the current directory
 # to the  `/app` directory in the container
-COPY . /app
-#  defines the working directory within the container
-WORKDIR /usr/src/app/techtrends
-# run commands within the container. 
-# For example, invoke a pip command 
-# to install dependencies defined in the requirements.txt file. 
+COPY ./techtrends/requirements.txt /app/requirements.txt
+WORKDIR /app
 RUN pip install -r requirements.txt
+COPY ./techtrends /app
+COPY . /app
 EXPOSE 3111
 # provide a command to run on container start. 
 # For example, start the `app.py` application.
