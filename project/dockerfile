@@ -8,7 +8,7 @@ LABEL maintainer="Mitesh"
 # to the  `/app` directory in the container
 COPY . /app
 #  defines the working directory within the container
-WORKDIR /app/techtrends
+WORKDIR /usr/src/app/techtrends
 # run commands within the container. 
 # For example, invoke a pip command 
 # to install dependencies defined in the requirements.txt file. 
