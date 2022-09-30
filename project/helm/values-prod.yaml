@@ -9,9 +9,9 @@ image:
 replicaCount: 5
 
 resources:
-  requestsMemory:"128Mi"
-  requestsCPU:"350m"
-  limitMemory:"256Mi"
-  limitCPU:"500m"
+  requestsMemory: 128Mi
+  requestsCPU: 350m
+  limitMemory: 256Mi
+  limitCPU: 500m
 
   	
