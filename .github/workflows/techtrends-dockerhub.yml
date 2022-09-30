@@ -1,18 +1,9 @@
-## MOVE THIS FILE to `.github/workflows/docker-build.yaml` TO EXECUTE IT
-
-# This is a basic workflow to help you get started with Actions
-
 name: Docker Build and Push
-
-# Controls when the action will run. Triggers the workflow on push or pull request
-# events but only for the master branch
 on:
   push:
     branches: [ main ]
   pull_request:
     branches: [ main ]
-
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
   build:
@@ -20,8 +11,6 @@ jobs:
     runs-on: ubuntu-latest
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: step-1
-        run: echo "${GITHUB_WORKSPACE}"
       - name: Checkout
         uses: actions/checkout@v2
       -
