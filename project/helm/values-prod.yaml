@@ -13,5 +13,3 @@ resources:
   requestsCPU: 350m
   limitMemory: 256Mi
   limitCPU: 500m
-
-  	
