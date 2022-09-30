@@ -32,8 +32,8 @@ spec:
              port: {{ .Values.containerPort }}
         resources:
           requests:
-            memory: {{ .Values.resources.requestMemory }}
-            cpu: {{ .Values.resources.requestCPU }}
+            memory: {{ .Values.resources.requestsMemory }}
+            cpu: {{ .Values.resources.requestsCPU }}
           limits:
             memory: {{ .Values.resources.limitMemory }}
             cpu: {{ .Values.resources.limitCPU }}
