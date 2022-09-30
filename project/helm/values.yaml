@@ -1,0 +1,25 @@
+namespace:
+  name: sandbox
+service:
+  port: 4111
+  targetPort: 3111
+  protocol: TCP
+  type: ClusterIP
+ 
+image:
+  repository: asylumdropout/techtrends
+  tag: latest
+  pullPolicy: IfNotPresent
+
+replicaCount: 1
+
+resources:
+  requestsMemory:"64Mi"
+  requestsCPU:"250m"
+  limitMemory:"128Mi"
+  limitCPU:"500m"
+
+containerPort: 3111
+livenessProbe: /healthz
+readinessProbe: /healthz
+  	

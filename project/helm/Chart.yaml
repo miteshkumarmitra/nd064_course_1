@@ -1,0 +1,10 @@
+apiVersion: v1
+name: techtrends
+description: Udacity's Tech Trend Project
+keywords:
+- techtrends
+- udacity
+version: 1.0.0
+maintainers:
+- name: mitesh
+  email: asylumdropout@gmail.com
